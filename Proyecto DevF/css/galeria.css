@@ -1,0 +1,102 @@
+* /*ESTILO GENERAL*/
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+body /*ESTILO PARA EL CONTENEDOR PRINCIPAL DE LA PAGINA*/
+{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container /*ESTILO DEL CONTENEDOR PADRE*/
+{
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1000px;
+    transform-style: preserve-3d;
+}
+
+.container .box /*ESTILO DE LOS CONTENEDORES HIJO*/
+{
+    background-color: #6f42c1;
+   position: relative;
+   width: 300px; 
+   height: 410px;
+   margin: 20px 0;
+   perspective: 1000px;
+   overflow: hidden;
+   transform-style: preserve-3d;
+}
+.container .box p/*ESTILO PARA EL PARRAFO DE CADA HIJO*/
+{
+    color: #6f42c1;
+    margin: 25px;
+   
+}
+.container .box h2 /*ESTILO PARA EL TITULO DE CADA HIJO*/
+{
+    color: #6f42c1;
+    margin: 25px;
+   
+}
+.container .box:hover p /*ESTILO PARA EL PARRAFO AL PASAR EL MOUSE*/
+{
+    color: white;
+    margin: 25px;
+   
+}
+.container .box:hover h2 /*ESTILO PARA EL TITULO AL PASAR EL MOUSE*/
+{
+    color: white;
+    margin: 25px;
+   
+}
+
+.container .box .imgBx /*ESTILO PARA LOS CONTENDORES DE LAS IMAGENES*/
+{
+    margin: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; 
+   height: 100%;
+   margin: 20px 0;
+   transform-origin: top;
+   transform-style: preserve-3d;
+   transition: 0.5s;
+}
+
+.container .box:hover /*ESTILO PARA LOS CONTENEDORES HIJO AL PASAR EL MOUSE*/
+{
+   background-color: #8c78ca;
+}
+.container .box:hover .imgBx /*ESTILO PARA LA IMAGEN AL PASAR EL MOUSE*/
+{
+   transform: rotateX(-90deg);
+   opacity: 0;
+}
+.container .box .imgBx img /*ESTILO PARA LAS IMAGENES*/
+{
+    
+    position: absolute;
+    bottom: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
