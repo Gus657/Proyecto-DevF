@@ -1,0 +1,31 @@
+body
+{
+    background-color: tomato;
+}
+.fila
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 650px;
+    background-color: turquoise;
+
+}
+.img-cardd:hover
+{
+transform: rotateZ(20deg);
+
+}
+.img-cardd2:hover
+{
+transform: rotateZ(-20deg);
+
+}
+.columna
+{
+  
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    
+}
